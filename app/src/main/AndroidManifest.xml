@@ -61,6 +61,10 @@
             android:name=".SupplierMyProperties"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SupplierBookingRequest"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

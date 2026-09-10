@@ -20,21 +20,21 @@
             android:padding="15dp">
 
             <TextView
-                android:id="@+id/tv_sPropertyName"
+                android:id="@+id/tv_propertyName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="19sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tv_sLocation"
+                android:id="@+id/tv_location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/tv_sPrice"
+                android:id="@+id/tv_price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -42,7 +42,7 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/btn_sDelete"
+                android:id="@+id/btn_details"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"

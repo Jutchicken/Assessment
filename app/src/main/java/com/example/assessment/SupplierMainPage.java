@@ -57,6 +57,17 @@ public class SupplierMainPage extends AppCompatActivity {
             startActivity(intent);
         });
 
+        cvBookingRequests.setOnClickListener(v -> {
+            Toast.makeText(getApplicationContext(),
+                    "Loading requests...",
+                    Toast.LENGTH_SHORT).show();
+
+            Intent intent = new Intent(getApplicationContext(),
+                    SupplierBookingRequest.class
+            );
+            startActivity(intent);
+        });
+
     }
 
     public void btnLogout(View view) {
@@ -81,9 +92,15 @@ public class SupplierMainPage extends AppCompatActivity {
                 "SupplierData", MODE_PRIVATE );
 
         int propertyCount = preferences.getInt(
-                "propertyCount", 0);
+                "propertyCount", 0
+        );
 
-        tvPropertyCount.setText(
-                String.valueOf(propertyCount));
+        int requestCount = preferences.getInt(
+                "requestCount", 0
+        );
+
+        tvPropertyCount.setText(String.valueOf(propertyCount));
+
+        tvRequestCount.setText(String.valueOf(requestCount));
     }
 }
